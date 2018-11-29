@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/naabraz/react-boilerplate/issues"
   },
-  "homepage": "https://github.com/naabraz/react-boilerplate#readme"
+  "homepage": "https://github.com/naabraz/react-boilerplate#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }
