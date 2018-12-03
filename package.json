@@ -8,6 +8,7 @@
     "build-babel": "npm run build-babel-server && npm run build-babel-client",
     "build-babel-server": "babel src/server --out-dir ./dist",
     "build-babel-client": "babel src/client --copy-files --out-dir ./dist/public",
+    "clean": "rimraf dist node_modules",
     "start": "node ./dist/server.js",
     "test": "jest ./src"
   },
@@ -31,13 +32,15 @@
     "jest": "^23.6.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
+    "rimraf": "^2.6.2",
     "webpack": "^3.12.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-loader": "^8.0.4",
+    "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "html-webpack-plugin": "^3.2.0",
     "webpack-node-externals": "^1.7.2"
   }
 }
